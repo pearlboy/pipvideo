@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center"
+    tools:context="com.icetea09.demofloatingview.MainActivity">
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <VideoView
+        android:layout_width="192dp"
+        android:layout_height="108dp"
+        android:id="@+id/local_videoView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Play Video 1"
+        android:id="@+id/btn_v1"
+        android:layout_height="wrap_content" />
+        <VideoView
+            android:layout_width="192dp"
+            android:layout_height="108dp"
+            android:id="@+id/local_videoView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Play Video 2"
+            android:id="@+id/btn_v2"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_show_floating_view"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/show_floating_view" />
+
+</RelativeLayout>
