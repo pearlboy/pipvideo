@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      //  mBtnShowView = (Button) findViewById(R.id.btn_show_floating_view);
+        mBtnShowView = (Button) findViewById(R.id.btn_show_floating_view);
         btn_one = findViewById(R.id.btn_v1);
         btn_two = findViewById(R.id.btn_v2);
         v1 = findViewById(R.id.local_videoView1);
@@ -43,17 +43,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-//            case R.id.btn_show_floating_view:
-//                if (mIsFloatingViewShow) {
-//                    hideFloatingView();
-//                    mIsFloatingViewShow = false;
-//                    mBtnShowView.setText(R.string.show_floating_view);
-//                } else {
-//                    showFloatingView();
-//                    mIsFloatingViewShow = true;
-//                    mBtnShowView.setText(R.string.hide_floating_view);
-//                }
-//                break;
+            case R.id.btn_show_floating_view:
+                if (mIsFloatingViewShow) {
+                    hideFloatingView();
+                    mIsFloatingViewShow = false;
+                    mBtnShowView.setText(R.string.show_floating_view);
+                } else {
+                    showFloatingView();
+                    mIsFloatingViewShow = true;
+                    mBtnShowView.setText(R.string.hide_floating_view);
+                }
+                break;
             case R.id.btn_v1:
                 Toast.makeText(this, "BTN ONE is Working", Toast.LENGTH_SHORT).show();
                 Uri video1 = Uri.parse(UrlPath1);
